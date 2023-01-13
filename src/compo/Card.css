@@ -15,14 +15,19 @@
   z-index: 1;
 }
 
-.card-img:hover::before {
+.card-img::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
-  opacity: 0.4;
   background: var(--Cyan);
+  opacity: 0;
+}
+
+.card-img:hover::before {
+  opacity: 0.4;
   z-index: 2;
+  transition: opacity 1s;
 }
 
 .card-img:hover:after {
@@ -72,8 +77,21 @@
    Typography
    ================================ */
 
-.card-title {
+.card-title,
+.avatar-link {
   color: var(--White);
+}
+.card-title {
+  font-size: 1.75rem;
+  display: block;
+}
+
+.card-title:hover,
+.card-title:focus,
+.avatar-link:hover,
+.avatar-link:focus {
+  color: var(--Cyan);
+  transition: all 1s ease-out;
 }
 
 .coin {

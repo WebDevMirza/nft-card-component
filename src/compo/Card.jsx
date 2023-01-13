@@ -30,7 +30,7 @@ const Card = () => {
             <div className="line mb-16"></div>
             <div className="footer">
               <div className="avatar">
-                <img src={Avatar} alt="Avatar" />
+                <img src={Avatar} alt="Avatar" width={45} height={45} />
               </div>
               <div className="avatar-desc">
                 Creation of <span>WebDev Mirza</span>

@@ -10,11 +10,13 @@ const Card = () => {
       <div className="container">
         <div className="row">
           <div className="card-img mb-16">
-            <img src={Dice} alt="image-eduilibrium" />
+            <img src={Dice} alt="image-eduilibrium" width={319} height={319} />
           </div>
 
           <div className="card-body">
-            <h1 className="card-title mb-16">Equilibrium #3429</h1>
+            <a href="#" className="card-title mb-16">
+              Equilibrium #3429
+            </a>
             <p className="card-text mb-16">Our Equilibrium collection promotes balance and calm.</p>
             <ul className="card-feature mb-16">
               <li className="coin">
@@ -33,7 +35,10 @@ const Card = () => {
                 <img src={Avatar} alt="Avatar" width={45} height={45} />
               </div>
               <div className="avatar-desc">
-                Creation of <span>WebDev Mirza</span>
+                Creation of{" "}
+                <a href="#" className="avatar-link">
+                  WebDev Mirza
+                </a>
               </div>
             </div>
           </div>

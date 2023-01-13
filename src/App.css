@@ -59,6 +59,11 @@ body {
   line-height: var(--line-height);
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }

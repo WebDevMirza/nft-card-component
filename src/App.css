@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /*  ===============================
+      Colors
+      ===============================   */
+  --tm-Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --bg-main-Verydarkblue: hsl(217, 54%, 11%);
+  --bg-card-Verydarkblue: hsl(216, 50%, 16%);
+  --line-Verydarkblue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ===============================
+     Fonts
+     ===============================  */
+
+  --ff-outfit: "Outfit", sans-serif;
+  --fs-fontsize: 1rem;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ==============================
+   Spacing
+   ==============================  */
+
+.mb-16 {
+  margin-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mb-20 {
+  margin-bottom: 1.25rem;
+}
+.mb-24 {
+  margin-bottom: 1.5rem;
+}
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  margin: 0;
+  font-family: var(--ff-outfit);
+  font-size: var(--fs-fontsize);
+  font-weight: var(--fw-400);
+  line-height: var(--line-height);
+  background-color: var(--bg-main-Verydarkblue);
+  color: var(--tm-Softblue);
+  letter-spacing: 0.6px;
+  line-height: var(--line-height);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==============================
+Layout
+============================== */
+
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* ================================
+   Typography
+   ================================ */
